@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+.top-panel {
+  background-color: darkslategray;
+}
+.panel {
+  height: 50vh;
+  display: flex;
+}
+.editor-con {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: darkslategray;
+}
+.editor-con.close {
+  flex-grow: 0;
+}
+.editor-con.close .CodeMirror-scroll {
+  position: absolute;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.653);
+  color: aliceblue;
+  padding: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.code-mirror {
+  flex-grow: 1;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  overflow: hidden;
+}
+.CodeMirror {
+  height: 100% !important;
+}
+.btn{
+    margin-left: .5rem;
+    background: none;
+    border:none;
+    color: aliceblue;
+    cursor: pointer;
+}

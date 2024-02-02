@@ -55,6 +55,7 @@ export default function Editor(props) {
         </button>
       </div>
       <ControlledEditor
+      autoScroll={true}
         onBeforeChange={handleChange}
         value={value}
         className="code-mirror"

@@ -194,23 +194,24 @@ const App = () => {
     return () => clearTimeout(timeout);
   }, [html, css, js]);
   return (
-    <>
+    <div className="screen">
       <div className="panel top-panel">
         <Editor name="HTML" language="xml" value={html} onChange={setHtml} />
         <Editor name="CSS" language="css" value={css} onChange={setCss} />
         <Editor name="JS" language="javascript" value={js} onChange={setJs} />
       </div>
       <div className="panel">
-        <iframe
+        <div className="view-panel"> <iframe
           srcDoc={srcDoc}
           title="output"
           sandbox="allow-scripts"
           frameBorder="0"
           width="100%"
           height="100%"
-        />
+        /></div>
+       
       </div>
-    </>
+    </div>
   );
 };
 export default App;

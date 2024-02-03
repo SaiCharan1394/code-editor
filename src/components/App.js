@@ -181,7 +181,7 @@ const App = () => {
       }
     }
     `);
-  }, []); // Empty dependency array ensures this effect runs only once when the component mounts
+  }, [setCss, setHtml, setJs]); 
 
   useEffect(() => {
     const timeout = setTimeout(() => {
